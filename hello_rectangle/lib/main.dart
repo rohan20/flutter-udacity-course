@@ -3,8 +3,12 @@ import 'package:flutter/material.dart';
 class HelloRectangle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.blueAccent,
+    return new Center(
+      child: Container(
+        color: Colors.green,
+        height: 400.0,
+        width: 300.0,
+      ),
     );
   }
 }
