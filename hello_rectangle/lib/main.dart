@@ -9,7 +9,10 @@ class HelloRectangle extends StatelessWidget {
         height: 400.0,
         width: 300.0,
         child: Center(
-          child: Text("Hello!"),
+          child: Text(
+            "Hello!",
+            style: TextStyle(fontSize: 40.0, color: Colors.white),
+          ),
         ),
       ),
     );
