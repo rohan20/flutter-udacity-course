@@ -1,5 +1,14 @@
 import 'package:flutter/material.dart';
 
+class HelloRectangle extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.blueAccent,
+    );
+  }
+}
+
 void main() {
   runApp(
     MaterialApp(
@@ -8,9 +17,7 @@ void main() {
         appBar: AppBar(
           title: new Text("Hello Rectangle!"),
         ),
-        body: Container(
-          color: Colors.green,
-        ),
+        body: HelloRectangle(),
       ),
     ),
   );
