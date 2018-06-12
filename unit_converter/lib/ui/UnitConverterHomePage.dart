@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:unit_converter/custom_widget/CategoryItem.dart';
 
 class UnitConverterHomePage extends StatelessWidget {
   final String _appTitle = "UNIT CONVERTER";
@@ -36,12 +37,22 @@ class UnitConverterHomePage extends StatelessWidget {
       color: _backgroundColor,
       child: Column(
         children: <Widget>[
-          ListTile(
-            title: new Text("Time"),
+          CategoryItem(
+            categoryName: "Length",
           ),
-          ListTile(
-            title: new Text("Length"),
+          CategoryItem(
+            categoryName: "Area",
           ),
+          CategoryItem(
+            categoryName: "Volume",
+          ),
+          CategoryItem(
+            categoryName: "Mass",
+          ),
+//            CategoryItem(categoryName: "Time",),
+//            CategoryItem(categoryName: "Digital Storage",),
+//            CategoryItem(categoryName: "Energy",),
+//            CategoryItem(categoryName: "Currency",),
         ],
       ),
     );
