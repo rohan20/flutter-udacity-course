@@ -33,35 +33,10 @@ class UnitConverterHomePage extends StatelessWidget {
   }
 
   Widget _unitConverterBody() {
-    return new Container(
-      child: Column(
-        children: <Widget>[
-          CategoryItem(
-            categoryName: "Length",
-            color: Colors.blueAccent,
-            iconData: Icons.cake,
-          ),
-          CategoryItem(
-            categoryName: "Area",
-            color: Colors.yellowAccent,
-            iconData: Icons.cake,
-          ),
-          CategoryItem(
-            categoryName: "Volume",
-            color: Colors.redAccent,
-            iconData: Icons.cake,
-          ),
-          CategoryItem(
-            categoryName: "Mass",
-            color: Colors.purpleAccent,
-            iconData: Icons.cake,
-          ),
-//            CategoryItem(categoryName: "Time",),
-//            CategoryItem(categoryName: "Digital Storage",),
-//            CategoryItem(categoryName: "Energy",),
-//            CategoryItem(categoryName: "Currency",),
-        ],
-      ),
+    return new ListView.builder(
+      itemBuilder: (BuildContext context, int index) =>
+          CategoryItem(categoryName: Constants.categoriesList[index], color: Colors.purpleAccent, iconData: Icons.cake),
+      itemCount: Constants.categoriesList.length,
     );
   }
 }
