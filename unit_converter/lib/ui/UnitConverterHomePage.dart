@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:unit_converter/custom_widget/CategoryItem.dart';
+import 'package:unit_converter/util/Constants.dart';
 
 class UnitConverterHomePage extends StatelessWidget {
   final String _appTitle = "UNIT CONVERTER";
-  final Color _backgroundColor = Colors.green[100];
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class UnitConverterHomePage extends StatelessWidget {
 
   AppBar _appBar() {
     return new AppBar(
-      backgroundColor: _backgroundColor,
+      backgroundColor: Constants.backgroundColor,
       elevation: 0.0,
       title: Center(
         child: new Text(
@@ -34,20 +34,27 @@ class UnitConverterHomePage extends StatelessWidget {
 
   Widget _unitConverterBody() {
     return new Container(
-      color: _backgroundColor,
       child: Column(
         children: <Widget>[
           CategoryItem(
             categoryName: "Length",
+            color: Colors.blueAccent,
+            iconData: Icons.cake,
           ),
           CategoryItem(
             categoryName: "Area",
+            color: Colors.yellowAccent,
+            iconData: Icons.cake,
           ),
           CategoryItem(
             categoryName: "Volume",
+            color: Colors.redAccent,
+            iconData: Icons.cake,
           ),
           CategoryItem(
             categoryName: "Mass",
+            color: Colors.purpleAccent,
+            iconData: Icons.cake,
           ),
 //            CategoryItem(categoryName: "Time",),
 //            CategoryItem(categoryName: "Digital Storage",),

@@ -1,25 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
+import 'package:unit_converter/util/Constants.dart';
 
 class CategoryItem extends StatelessWidget {
-  String _categoryName;
+  final double _itemHeight = 100.0;
 
-  CategoryItem({@required categoryName}) {
-    _categoryName = categoryName;
-  }
+  final String categoryName;
+  final IconData iconData;
+  final Color color;
+
+  CategoryItem(
+      {@required this.categoryName,
+      @required this.color,
+      @required this.iconData});
 
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.green[100],
+      color: Constants.backgroundColor,
       child: Container(
-        height: 100.0,
+        height: _itemHeight,
         child: InkWell(
-          splashColor: Colors.lightBlue,
-          highlightColor: Colors.lightGreenAccent,
-          borderRadius: BorderRadius.circular(50.0),
+          splashColor: color,
+          highlightColor: color,
+          borderRadius: BorderRadius.circular(_itemHeight / 2),
           onTap: () {
-            print("Tapped " + _categoryName);
+            print("Tapped " + categoryName);
           },
           child: Padding(
             padding: const EdgeInsets.all(8.0),
@@ -29,12 +35,12 @@ class CategoryItem extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: new Icon(
-                      Icons.cake,
+                      iconData,
                       size: 60.0,
                     ),
                   ),
                   new Text(
-                    _categoryName,
+                    categoryName,
                     style: TextStyle(fontSize: 24.0),
                   ),
                 ],
