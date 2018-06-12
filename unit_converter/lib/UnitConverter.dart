@@ -10,22 +10,40 @@ class UnitConverter extends StatelessWidget {
     return new MaterialApp(
       debugShowCheckedModeBanner: false,
       home: new Scaffold(
-        appBar: AppBar(
-          backgroundColor: _backgroundColor,
-          elevation: 0.0,
-          title: Center(
-            child: new Text(
-              _appTitle,
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 22.0,
-              ),
-            ),
+        appBar: _appBar(),
+        body: _unitConverterBody(),
+      ),
+    );
+  }
+
+  AppBar _appBar() {
+    return new AppBar(
+      backgroundColor: _backgroundColor,
+      elevation: 0.0,
+      title: Center(
+        child: new Text(
+          _appTitle,
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 22.0,
           ),
         ),
-        body: new Container(
-          color: _backgroundColor,
-        ),
+      ),
+    );
+  }
+
+  Widget _unitConverterBody() {
+    return new Container(
+      color: _backgroundColor,
+      child: Column(
+        children: <Widget>[
+          ListTile(
+            title: new Text("Time"),
+          ),
+          ListTile(
+            title: new Text("Length"),
+          ),
+        ],
       ),
     );
   }
