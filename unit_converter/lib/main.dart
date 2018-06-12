@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'UnitConverter.dart';
+import 'package:unit_converter/ui/UnitConverterHomePage.dart';
 
 void main(){
-  runApp(new UnitConverter());
+  runApp(new UnitConverterHomePage());
 }

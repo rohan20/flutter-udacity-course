@@ -1,7 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class UnitConverter extends StatelessWidget {
+class UnitConverterHomePage extends StatelessWidget {
   final String _appTitle = "UNIT CONVERTER";
   final Color _backgroundColor = Colors.green[100];
 
