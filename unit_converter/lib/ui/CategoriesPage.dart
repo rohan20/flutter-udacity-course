@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:unit_converter/custom_widget/CategoryItem.dart';
 import 'package:unit_converter/util/Constants.dart';
 
-class UnitConverterHomePage extends StatelessWidget {
+class CategoriesPage extends StatelessWidget {
   final String _appTitle = "UNIT CONVERTER";
 
   @override

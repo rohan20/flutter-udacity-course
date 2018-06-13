@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class UnitConverterDetailPage extends StatelessWidget {
+class ConverterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Container();
