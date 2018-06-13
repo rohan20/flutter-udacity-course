@@ -11,7 +11,7 @@ class UnitConverterHomePage extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: new Scaffold(
         appBar: _appBar(),
-        body: _unitConverterBody(),
+        body: _unitConverterHomePageBody(),
       ),
     );
   }
@@ -32,7 +32,7 @@ class UnitConverterHomePage extends StatelessWidget {
     );
   }
 
-  Widget _unitConverterBody() {
+  Widget _unitConverterHomePageBody() {
     return new ListView.builder(
       itemBuilder: (BuildContext context, int index) =>
           CategoryItem(categoryName: Constants.categoriesList[index], color: Colors.purpleAccent, iconData: Icons.cake),
