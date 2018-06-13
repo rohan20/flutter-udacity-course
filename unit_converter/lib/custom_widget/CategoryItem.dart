@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
+import 'package:unit_converter/ui/ConverterPage.dart';
 import 'package:unit_converter/util/Constants.dart';
 
 class CategoryItem extends StatelessWidget {
@@ -26,6 +27,7 @@ class CategoryItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(_itemHeight / 2),
           onTap: () {
             print("Tapped " + categoryName);
+            _navigateToConverterPage(context);
           },
           child: Padding(
             padding: const EdgeInsets.all(8.0),
@@ -50,5 +52,10 @@ class CategoryItem extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  void _navigateToConverterPage(BuildContext context) {
+    Navigator.of(context).push(new MaterialPageRoute(
+        builder: (BuildContext context) => new ConverterPage()));
   }
 }
