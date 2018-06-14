@@ -27,7 +27,7 @@ class CategoryItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(_itemHeight / 2),
           onTap: () {
             print("Tapped " + categoryName);
-            _navigateToConverterPage(context);
+            _navigateToConverterPage(context, categoryName);
           },
           child: Padding(
             padding: const EdgeInsets.all(8.0),
@@ -54,8 +54,8 @@ class CategoryItem extends StatelessWidget {
     );
   }
 
-  void _navigateToConverterPage(BuildContext context) {
+  void _navigateToConverterPage(BuildContext context, String unitName) {
     Navigator.of(context).push(new MaterialPageRoute(
-        builder: (BuildContext context) => new ConverterPage()));
+        builder: (BuildContext context) => new ConverterPage(unitName: unitName)));
   }
 }
