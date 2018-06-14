@@ -35,7 +35,7 @@ class CategoriesPage extends StatelessWidget {
   Widget _unitConverterHomePageBody() {
     return new ListView.builder(
       itemBuilder: (BuildContext context, int index) =>
-          CategoryItem(categoryName: Constants.categoriesList[index], color: Colors.purpleAccent, iconData: Icons.cake),
+          CategoryItem(categoryName: Constants.categoriesList[index], color: Constants.categoryColorList[index], iconData: Icons.cake),
       itemCount: Constants.categoriesList.length,
     );
   }

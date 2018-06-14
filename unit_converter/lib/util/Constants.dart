@@ -13,4 +13,15 @@ class Constants {
     'Energy',
     'Currency',
   ];
+
+  static const categoryColorList = <Color>[
+    Colors.teal,
+    Colors.orange,
+    Colors.pinkAccent,
+    Colors.blueAccent,
+    Colors.yellow,
+    Colors.greenAccent,
+    Colors.purpleAccent,
+    Colors.red,
+  ];
 }
