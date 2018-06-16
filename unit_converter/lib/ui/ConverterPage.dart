@@ -26,12 +26,30 @@ class ConverterPage extends StatelessWidget {
       color: Colors.white,
       child: new Column(
         children: <Widget>[
+          const SizedBox(height: 24.0),
           new Container(
+            color: Colors.blue[100],
             child: new Padding(
-              padding: const EdgeInsets.all(24.0),
-              child: ConverterValue(hintText: "Enter input value", labelText: "Input",),
+              padding: const EdgeInsets.symmetric(horizontal: 24.0),
+              child: ConverterValue(
+                hintText: "Enter input value",
+                labelText: "Input",
+              ),
             ),
-          )
+          ),
+          const SizedBox(height: 12.0),
+          new Icon(Icons.import_export),
+          const SizedBox(height: 12.0),
+          new Container(
+            color: Colors.teal[100],
+            child: new Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24.0),
+              child: ConverterValue(
+                hintText: "Enter output value",
+                labelText: "Output",
+              ),
+            ),
+          ),
         ],
       ),
     );
