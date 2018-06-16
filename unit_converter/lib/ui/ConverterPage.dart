@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:unit_converter/custom_widget/ConverterValue.dart';
 
 class ConverterPage extends StatelessWidget {
   String _unitName;
@@ -28,11 +29,7 @@ class ConverterPage extends StatelessWidget {
           new Container(
             child: new Padding(
               padding: const EdgeInsets.all(24.0),
-              child: new TextField(
-                decoration: new InputDecoration(
-                  hintText: "Input"
-                ),
-              ),
+              child: ConverterValue(hintText: "Enter input value", labelText: "Input",),
             ),
           )
         ],
