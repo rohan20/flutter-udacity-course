@@ -1,23 +1,32 @@
 import 'package:flutter/material.dart';
 import 'package:unit_converter/custom_widget/ConverterContainer.dart';
-import 'package:unit_converter/custom_widget/ConverterOptions.dart';
-import 'package:unit_converter/custom_widget/ConverterValue.dart';
 
-class ConverterPage extends StatelessWidget {
-  String _unitName;
-  Color _unitColor;
+class ConverterPage extends StatefulWidget {
 
-  ConverterPage({@required unitName, @required Color unitColor}) {
-    _unitName = unitName;
-    _unitColor = unitColor;
+  final String unitName;
+  final Color unitColor;
+
+  ConverterPage({@required this.unitName, @required this.unitColor});
+
+  @override
+  _ConverterPageState createState() {
+    return new _ConverterPageState(unitName: this.unitName, unitColor: this.unitColor);
   }
+}
+
+class _ConverterPageState extends State<ConverterPage> {
+
+  final String unitName;
+  final Color unitColor;
+
+  _ConverterPageState({@required this.unitName, @required this.unitColor});
 
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        backgroundColor: _unitColor,
-        title: new Text(_unitName),
+        backgroundColor: unitColor,
+        title: new Text(unitName),
       ),
       body: _converterBody(),
     );
@@ -29,11 +38,17 @@ class ConverterPage extends StatelessWidget {
       child: new Column(
         children: <Widget>[
           const SizedBox(height: 24.0),
-          new ConverterContainer(hintText: "Enter input value", labelText: "Input",),
+          new ConverterContainer(
+            hintText: "Enter input value",
+            labelText: "Input",
+          ),
           const SizedBox(height: 12.0),
           new Icon(Icons.import_export),
           const SizedBox(height: 12.0),
-          new ConverterContainer(hintText: "Output value", labelText: "Ouput",),
+          new ConverterContainer(
+            hintText: "Output value",
+            labelText: "Ouput",
+          ),
         ],
       ),
     );
