@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:unit_converter/custom_widget/CategoryItem.dart';
+import 'package:unit_converter/custom_widget/CategoryListItem.dart';
 import 'package:unit_converter/util/Constants.dart';
 
 class CategoriesPage extends StatelessWidget {
@@ -35,7 +35,7 @@ class CategoriesPage extends StatelessWidget {
   Widget _unitConverterHomePageBody() {
     return new ListView.builder(
       itemBuilder: (BuildContext context, int index) =>
-          CategoryItem(categoryName: Constants.categoriesList[index], color: Constants.categoryColorList[index], iconData: Icons.cake),
+          CategoryListItem(categoryName: Constants.categoriesList[index], color: Constants.categoryColorList[index], iconData: Icons.cake),
       itemCount: Constants.categoriesList.length,
     );
   }

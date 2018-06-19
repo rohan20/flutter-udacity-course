@@ -3,14 +3,14 @@ import 'package:meta/meta.dart';
 import 'package:unit_converter/ui/ConverterPage.dart';
 import 'package:unit_converter/util/Constants.dart';
 
-class CategoryItem extends StatelessWidget {
+class CategoryListItem extends StatelessWidget {
   final double _itemHeight = 100.0;
 
   final String categoryName;
   final IconData iconData;
   final Color color;
 
-  CategoryItem(
+  CategoryListItem(
       {@required this.categoryName,
       @required this.color,
       @required this.iconData});
