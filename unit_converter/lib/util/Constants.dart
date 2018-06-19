@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:unit_converter/model/Category.dart';
 
 class Constants {
   static final backgroundColor = Colors.green[100];
 
-  static const categoriesList = <String>[
+  static const categoryNameList = <String>[
     'Length',
     'Area',
     'Volume',
@@ -12,6 +13,17 @@ class Constants {
     'Digital Storage',
     'Energy',
     'Currency',
+  ];
+
+  static const categoryIconList = <IconData>[
+    Icons.cake,
+    Icons.cake,
+    Icons.cake,
+    Icons.cake,
+    Icons.cake,
+    Icons.cake,
+    Icons.cake,
+    Icons.cake,
   ];
 
   static const categoryColorList = <Color>[
@@ -24,4 +36,18 @@ class Constants {
     Colors.purpleAccent,
     Colors.red,
   ];
+
+  static List<Category> getCategoriesList() {
+    List<Category> list = new List();
+
+    for (int i = 0; i < categoryNameList.length; i++) {
+      list.add(new Category(
+        name: categoryNameList[i],
+        iconData: categoryIconList[i],
+        colorSwatch: categoryColorList[i],
+      ));
+    }
+
+    return list;
+  }
 }
