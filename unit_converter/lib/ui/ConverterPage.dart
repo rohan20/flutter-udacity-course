@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:unit_converter/custom_widget/ConverterContainer.dart';
 
 class ConverterPage extends StatefulWidget {
-
   final String unitName;
   final Color unitColor;
 
@@ -10,12 +9,12 @@ class ConverterPage extends StatefulWidget {
 
   @override
   _ConverterPageState createState() {
-    return new _ConverterPageState(unitName: this.unitName, unitColor: this.unitColor);
+    return new _ConverterPageState(
+        unitName: this.unitName, unitColor: this.unitColor);
   }
 }
 
 class _ConverterPageState extends State<ConverterPage> {
-
   final String unitName;
   final Color unitColor;
 
@@ -37,20 +36,38 @@ class _ConverterPageState extends State<ConverterPage> {
       color: Colors.white,
       child: new Column(
         children: <Widget>[
-          const SizedBox(height: 24.0),
-          new ConverterContainer(
-            hintText: "Enter input value",
-            labelText: "Input",
-          ),
+          _input(),
           const SizedBox(height: 12.0),
           new Icon(Icons.import_export),
           const SizedBox(height: 12.0),
-          new ConverterContainer(
-            hintText: "Output value",
-            labelText: "Ouput",
-          ),
+          _output(),
         ],
       ),
     );
   }
+
+  Column _input() {
+    return new Column(
+      children: <Widget>[
+        const SizedBox(height: 24.0),
+        new ConverterContainer(
+          hintText: "Enter input value",
+          labelText: "Input",
+        ),
+      ],
+    );
+  }
+
+  Column _output() {
+    return new Column(
+      children: <Widget>[
+        new ConverterContainer(
+          hintText: "Output value",
+          labelText: "Ouput",
+        ),
+      ],
+    );
+  }
+
+
 }
