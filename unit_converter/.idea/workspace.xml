@@ -7,7 +7,6 @@
     <list default="true" id="8bac8730-1dfe-43b8-84b5-d0061a0b0434" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/CategoriesPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/CategoriesPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/ConverterPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/ConverterPage.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,59 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ConverterPage.dart" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/ui/ConverterPage.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CategoriesPage.dart" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CategoriesPage.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/ui/CategoriesPage.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="48" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConverterValue.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/custom_widget/ConverterValue.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConverterContainer.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/custom_widget/ConverterContainer.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CategoryListItem.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/custom_widget/CategoryListItem.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+            <state relative-caret-position="692">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -109,8 +60,8 @@
         <option value="$PROJECT_DIR$/lib/model/Category.dart" />
         <option value="$PROJECT_DIR$/lib/util/Constants.dart" />
         <option value="$PROJECT_DIR$/lib/custom_widget/ConverterValue.dart" />
-        <option value="$PROJECT_DIR$/lib/ui/CategoriesPage.dart" />
         <option value="$PROJECT_DIR$/lib/ui/ConverterPage.dart" />
+        <option value="$PROJECT_DIR$/lib/ui/CategoriesPage.dart" />
       </list>
     </option>
   </component>
@@ -274,7 +225,7 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2581818" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2581818" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.20242424" />
       <window_info id="Captures" order="2" />
@@ -545,10 +496,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/util/Constants.dart">
+    <entry file="file://$PROJECT_DIR$/lib/ui/ConverterPage.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+        <state relative-caret-position="795">
+          <caret line="53" column="40" lean-forward="true" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -585,20 +536,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ui/CategoriesPage.dart">
+    <entry file="file://$PROJECT_DIR$/lib/util/Constants.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="48" />
+        <state relative-caret-position="615">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ui/ConverterPage.dart">
+    <entry file="file://$PROJECT_DIR$/lib/ui/CategoriesPage.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+        <state relative-caret-position="692">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

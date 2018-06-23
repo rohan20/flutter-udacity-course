@@ -1,19 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
+import 'package:unit_converter/model/Category.dart';
 import 'package:unit_converter/ui/ConverterPage.dart';
 import 'package:unit_converter/util/Constants.dart';
 
 class CategoryListItem extends StatelessWidget {
   final double _itemHeight = 100.0;
 
-  final String categoryName;
-  final IconData iconData;
-  final Color color;
+  final Category category;
 
-  CategoryListItem(
-      {@required this.categoryName,
-      @required this.color,
-      @required this.iconData});
+  CategoryListItem({@required this.category});
 
   @override
   Widget build(BuildContext context) {
@@ -22,11 +18,11 @@ class CategoryListItem extends StatelessWidget {
       child: Container(
         height: _itemHeight,
         child: InkWell(
-          splashColor: color,
-          highlightColor: color,
+          splashColor: category.colorSwatch,
+          highlightColor: category.colorSwatch,
           borderRadius: BorderRadius.circular(_itemHeight / 2),
           onTap: () {
-            print("Tapped " + categoryName);
+            print("Tapped " + category.name);
             _navigateToConverterPage(context);
           },
           child: Padding(
@@ -37,12 +33,12 @@ class CategoryListItem extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: new Icon(
-                      iconData,
+                      category.iconData,
                       size: 60.0,
                     ),
                   ),
                   new Text(
-                    categoryName,
+                    category.name,
                     style: TextStyle(fontSize: 24.0),
                   ),
                 ],
@@ -55,7 +51,13 @@ class CategoryListItem extends StatelessWidget {
   }
 
   void _navigateToConverterPage(BuildContext context) {
-    Navigator.of(context).push(new MaterialPageRoute(
-        builder: (BuildContext context) => new ConverterPage(unitName: categoryName, unitColor: color)));
+    Navigator.of(context).push(
+          new MaterialPageRoute(
+            builder: (BuildContext context) => new ConverterPage(
+                  unitName: category.name,
+                  unitColor: category.colorSwatch,
+                ),
+          ),
+        );
   }
 }
